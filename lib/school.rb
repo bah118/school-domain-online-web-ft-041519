@@ -9,7 +9,7 @@ class School
   end
   
   def roster
-    roster = {}
+    @roster = {}
   end
   
   def add_student(student_name, grade_level)
@@ -17,11 +17,11 @@ class School
   
    
    if roster.has_key?(grade_level)
-    roster[grade_level] << student_name
+    @roster[grade_level] << student_name
      
    else
-     roster[grade_level] = []
-     roster[grade_level] << student_name
+     @roster[grade_level] = []
+     @roster[grade_level] << student_name
    end
    
    
