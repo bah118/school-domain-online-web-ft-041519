@@ -2,7 +2,7 @@ class School
   
   attr_reader :school_name, :roster
   
-  ROSTER = {}
+ # ROSTER = {}
   
   def initialize(school_name)
     @school_name = school_name
@@ -16,12 +16,12 @@ class School
    # @roster[grade_level] = student_name
   
    
-   if @roster.has_key?(grade_level)
-     @roster[grade_level] << student_name
+   if roster.has_key?(grade_level)
+    @roster[grade_level] << student_name
      
    else
-     @roster[grade_level] = []
-     @roster[grade_level] << student_name
+     roster[grade_level] = []
+     roster[grade_level] << student_name
    end
    
    
